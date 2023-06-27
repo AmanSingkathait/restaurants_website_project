@@ -147,6 +147,68 @@ span {
     margin-top: 2rem;
 }
 
+/* ========================= food menu section starting =========================== */
+.uphead {
+    font-size: 1.8rem;
+    color: #5f5f5f;
+    font-family: monospace;
+}
+
+.downhead {
+    font-size: 3.5rem;
+    font-family: Itim;
+}
+
+.downhead span {
+    font-size: 3.5rem;
+}
+
+.food_menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0rem;
+    background-color: #fee2b3;
+}
+
+.food_menu .col_image {
+    max-width: 45px;
+    max-height: 50px;
+    margin: auto;
+    padding-right: 1rem;
+}
+
+.food_menu .col_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.food_menu .row {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.food_menu .row .col {
+    display: flex;
+    margin: 1rem;
+    padding: 2rem 5rem;
+    border: .5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7%;
+}
+
+.food_menu .row .col h1 {
+    font-size: 2rem;
+}
+
+.food_menu .row .col:hover {
+    background-color: #fff;
+    border: .5px solid #fff;
+}
+
+
 
 /* ---- media query  */
 @media(max-width:740px) {
@@ -205,6 +267,108 @@ span {
         padding: 0rem 3rem;
     }
 }
+
+/* ================================ testimonal reviews of people ============================ */
+.testimonials {
+    position: relative;
+    padding: 3.5rem 1rem;
+    height: 100%;
+    background-color: #fee2b3;
+}
+
+.T_container {
+
+    padding: 5rem 15px;
+    margin: 0rem 15px;
+    width: 900px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.t_row {
+    /* max-width: 650px;
+    padding: 2rem 15px;
+    margin: auto;
+    overflow: hidden; */
+    display: flex;
+    transition: 0.5s;
+}
+
+.t_row .t_col {
+    width: 700px;
+    padding: 2rem 10rem;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.t_col .t_image {
+    max-width: 85px;
+    max-height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.t_col .t_image img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.t_col h1 {
+    font-size: 2.7rem;
+    color: var(--headlight_color);
+}
+
+.t_col h2 {
+    color: #000;
+}
+
+.t_col .para {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.t_col p {
+    padding: 3.5rem 0rem;
+    color: #5f5f5f;
+
+}
+
+.control {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.control span {
+    width: 13px;
+    height: 13px;
+    background: #321764;
+    border-radius: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.powerbtn {
+    width: 40px !important;
+}
+
+
 
 @media(max-width:650px) {
     .para {
