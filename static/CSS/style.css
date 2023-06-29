@@ -108,7 +108,7 @@ span {
 }
 
 .B_table:hover {
-    padding-left:1.2rem;
+    padding-left: 1.2rem;
     padding-right: 1.2rem;
     border-radius: 10%;
     transform: translateY(-2px);
@@ -368,7 +368,167 @@ span {
     width: 40px !important;
 }
 
+/*  ? -------------------- gallary section started -------------------- */
 
+.gallary {
+    padding: 3.5rem 0rem;
+    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Image/hero_bg_2.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.gallary h1 {
+    font-size: 1.8rem;
+    color: #e7e7e7;
+    font-family: monospace;
+}
+
+.gallary h2 {
+    font-size: 3.7rem;
+    color: #b59292;
+}
+
+.gallary h2 span {
+    font-size: 3.7rem;
+    color: #ff5200;
+}
+
+.gallary .gallary_row {
+    padding: 3.1rem 10%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 350px));
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.gallary_row .gallary_image {
+    text-align: center;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.gallary_image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 300ms linear;
+}
+
+.gallary_image img:hover {
+    transform: scale(1.1);
+}
+
+.g_btn {
+    margin-top: 3.5rem;
+    background-color: #ff5200;
+    color: #fff;
+    padding: .8rem;
+    border-radius: 7%;
+}
+
+.g_btn:hover {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 10%;
+    transform: translateY(-2px);
+    font-weight: 700;
+}
+
+/* =================event section starting ================= */
+.event {
+    position: relative;
+    padding: 3.5rem 10%;
+    background: #fee2b3;
+}
+
+.h_para {
+    text-align: center;
+    padding: 2rem 0rem;
+    font-family: 'Itim';
+    max-width: 600px;
+    margin: auto;
+}
+
+.e_row {
+    padding: 3.5rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 450px));
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.e_row .e_col {
+    font-family: cursive;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.e_col h1 {
+    font-family: serif;
+    padding-top: 1rem;
+    font-size: 30px;
+}
+
+.e_col span {
+    font-size: 30px;
+    color: #ff5200;
+}
+
+.e_row p {
+    padding: 2rem 0rem;
+}
+
+.e_col h2 {
+    text-align: left;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+.e_col h2 i {
+    color: #ff5200;
+}
+
+/* ========================swiper style css ===================== */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff5200 !important;
+}
+
+
+@media(max-width:940px) {
+    .event {
+        padding: 3.5rem 3.5%;
+    }
+}
+
+@media(max-width:900px) {
+    .gallary .gallary_row {
+        padding: 3.1rem 5%;
+    }
+}
 
 @media(max-width:650px) {
     .para {
