@@ -49,7 +49,7 @@ html {
 
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, .6), rgba(4, 9, 30, .5)), url(../Image/bg_1.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, .6), rgba(4, 9, 30, .5)), url(../Restaurant_image/pexels-photo-1624487.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -147,6 +147,7 @@ span {
     margin-top: 2rem;
 }
 
+
 /* ========================= food menu section starting =========================== */
 .uphead {
     font-size: 1.8rem;
@@ -206,66 +207,6 @@ span {
 .food_menu .row .col:hover {
     background-color: #fff;
     border: .5px solid #fff;
-}
-
-
-
-/* ---- media query  */
-@media(max-width:740px) {
-    .navbar {
-        position: absolute;
-        top: -30rem;
-        right: 0;
-        left: 0;
-        background-color: #fee2b3;
-        padding: 1rem 2rem;
-        padding-top: 3rem;
-        z-index: 0;
-        transition: .2s linear;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .navbar.active {
-        top: 0;
-    }
-
-    .navbar a {
-        padding: 0.5rem 1rem;
-        display: block;
-        color: #000;
-    }
-
-    .navbar .poweranker {
-        color: #ff5200 !important;
-        font-weight: 600;
-    }
-
-    .navbar a:hover {
-        color: #000;
-        font-weight: 600;
-    }
-
-    #menu-btn {
-        position: absolute;
-        top: 2rem;
-        right: 1.5rem;
-        font-size: 2.7rem;
-        color: #000;
-        display: inline-block;
-        transition: .2s linear all;
-    }
-
-    #menu-btn.fa-times {
-        color: black;
-        transform: rotate(180deg);
-    }
-
-    .para {
-        padding: 0rem 3rem;
-    }
 }
 
 /* ================================ testimonal reviews of people ============================ */
@@ -368,11 +309,10 @@ span {
     width: 40px !important;
 }
 
-/*  ? -------------------- gallary section started -------------------- */
-
+/* =================================gallary section starting =========================== */
 .gallary {
     padding: 3.5rem 0rem;
-    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Image/hero_bg_2.jpg.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Restaurant_image/hero_bg_2.jpg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -467,7 +407,7 @@ span {
     height: 100%;
 }
 
-.e_col h1 {
+.e_col h2 {
     font-family: serif;
     padding-top: 1rem;
     font-size: 30px;
@@ -518,6 +458,113 @@ span {
 }
 
 
+/* ===============booking section table staring -=============== */
+.book {
+    padding: 3.5rem 0rem;
+    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Restaurant_image/yammi.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.B_container {
+    max-width: 600px;
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+.B_container h1 {
+    font-size: 1.8rem;
+    color: #e7e7e7;
+    font-family: monospace;
+}
+
+.B_container h2 span {
+    font-size: 3.7rem;
+    color: #ff5200;
+}
+
+.B_container p {
+    font-size: 2rem;
+    color: #bbb3b3;
+    padding-bottom: 3rem;
+}
+
+
+/* ======================footer section starting =-========================= */
+.footer_s {
+    padding: 3.5rem 3rem;
+    background-color: #fee2b3;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 350px));
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer_heading {
+    padding: 1.2rem 0rem;
+    font-size: 2rem;
+}
+
+.f_col {
+    /* filter: drop-shadow(0 0.5rem .8rem rgba(0,0,0,0.6)); */
+    /* box-shadow: 0 0.3rem 1rem rgba(49, 49, 49, 0.6); */
+    min-height: 15rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 5%;
+    margin: 0rem .5rem;
+    /* background-color: #f7d7a2; */
+}
+
+.footer_col2 h1 {
+    border-radius: 50%;
+    padding: .8rem;
+    overflow: hidden;
+    margin: 0rem 0.1rem;
+    cursor: pointer;
+}
+
+.footer_col2 h1:hover {
+    background: #ff5200;
+    color: #fff;
+}
+
+.last_footer {
+    margin-top: 2.5rem;
+    padding: 1rem 0rem;
+    font-family: monospace;
+}
+
+.footer_col3 h1 {
+    line-height: 2.5rem;
+}
+
+.footer_col1 p {
+    color: #363333;
+}
+
+.footer_col3 h1,
+p {
+    color: #363333;
+}
+
+.f_col:hover {
+    filter: drop-shadow(0 0.2rem .4rem rgba(0, 0, 0, 0.6));
+    box-shadow: 0 0.2rem .5rem rgb(248, 248, 248);
+    border-radius: 5%;
+    background-color: rgba(245, 245, 245, 0.26);
+    color: #000;
+}
+
+/* ----------------------------media quare of the screen ---------------------- */
+
 @media(max-width:940px) {
     .event {
         padding: 3.5rem 3.5%;
@@ -527,6 +574,113 @@ span {
 @media(max-width:900px) {
     .gallary .gallary_row {
         padding: 3.1rem 5%;
+    }
+}
+
+@media(max-width:740px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:689px) {
+    .e_row {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
+        gap: 2rem;
+    }
+
+    @media(max-width:689px) {
+        footer {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+        }
+    }
+
+}
+
+@media(max-width:430px) {
+    html {
+        font-size: 50%;
+    }
+
+    .gallary .gallary_row {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    }
+
+    .B_table {
+        padding: .5rem;
+    }
+
+    .t_col p {
+        padding: 3.5rem 2.5rem;
+        margin: auto;
+    }
+
+}
+
+@media(max-width:290px) {
+    .t_col p {
+        margin: auto;
+    }
+
+    .para {
+        max-width: 250px;
+    }
+}
+
+@media(max-width:650px) {
+    .navbar {
+        position: absolute;
+        top: -30rem;
+        right: 0;
+        left: 0;
+        background-color: #fee2b3;
+        padding: 1rem 2rem;
+        padding-top: 3rem;
+        z-index: 0;
+        transition: .2s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        top: 0;
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+        display: block;
+        color: #000;
+    }
+
+    .navbar .poweranker {
+        color: #ff5200 !important;
+        font-weight: 600;
+    }
+
+    .navbar a:hover {
+        color: #000;
+        font-weight: 600;
+    }
+
+    #menu-btn {
+        position: absolute;
+        top: 2rem;
+        right: 1.5rem;
+        font-size: 2.7rem;
+        color: #000;
+        display: inline-block;
+        transition: .2s linear all;
+    }
+
+    #menu-btn.fa-times {
+        color: black;
+        transform: rotate(180deg);
+    }
+
+    .para {
+        padding: 0rem 3rem;
     }
 }
 
