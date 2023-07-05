@@ -312,7 +312,7 @@ span {
 /* =================================gallary section starting =========================== */
 .gallary {
     padding: 3.5rem 0rem;
-    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Restaurant_image/hero_bg_2.jpg.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Image/hero_bg_2.jpg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -461,7 +461,7 @@ span {
 /* ===============booking section table staring -=============== */
 .book {
     padding: 3.5rem 0rem;
-    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Restaurant_image/yammi.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(../Image/yammi.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
