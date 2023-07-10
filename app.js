@@ -15,9 +15,18 @@ app.set('views', templatePath);
 
 hbs.registerPartials(partialPath);
 
+
+
 app.get("",(req,res)=>{
     res.render('index.hbs');
 })
+app.get("/about",(req,res)=>{
+    res.render('About.hbs')
+})
+app.get("/event",(req,res)=>{
+    res.render('Event.hbs')
+})
+
 app.listen(port,()=>{
     console.log(`app is runing at the port ${port}`)
 })

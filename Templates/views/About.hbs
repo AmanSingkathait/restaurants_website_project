@@ -9,43 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/style2.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rokkitt:wght@100;200&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    {{>headtag}}
 </head>
 
 <body>
     <!-- =================header section of about page starting ==== -->
     <header id="home" class="home"
         style=" background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(https://media.istockphoto.com/id/1241879686/photo/delicious-vegan-tacos-served-in-a-plate.jpg?s=612x612&w=is&k=20&c=12DQbRa_rDMuePXfx-VXIYlWRScsM-kqJxt3C9FYI1M=)">
-        <section class="nav">
-            <a href="#" class="logo">`
-                <h1>Millan</h1><span> .</span>
-            </a>
-            <div class="navbar" id="navbar">
-                <a href="/" class="ankar poweranker"> Home </a>
-                <a href="#" class="ankar"> Menu </a>
-                <a href="#" class="ankar"> Events </a>
-                <a href="#" class="ankar"> Gallery </a>
-                <a href="/About" class="ankar"> About </a>
-                <a href="#" class="ankar"> Contact </a>
-            </div>
-            <div class="booking">
-                <a href="#" class="B_table"> Book a Table </a>
-            </div>
-            <div> <a href="#" id="menu-btn" class="fas fa-bars"> </a></div>
-        </section>
+        {{>navbar}}
         <section class="Hcontainer" data-aos="fade-up">
             <div class="small_container">
                 <p> OUR RESTAURANT </p>
@@ -151,43 +122,10 @@
     </section>
 
     <!-- ===========================footer of about section starting = =========== -->
-    <section class="footer_s" style="padding-top: 7.5rem;">
-        <footer>
-            <div class="f_col footer_col1">
-                <h1 class="footer_heading">About<span>Meal.</span></h1>
-                <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                    there live the blind texts.
-                </p>
-            </div>
-            <div class="f_col footer_col2">
-                <h2 class="footer_heading"> Connect </h2>
-                <h1 class="fa-brands fa-instagram"> </h1>
-                <h1 class="fa-brands fa-facebook"> </h1>
-                <h1 class="fa-brands fa-square-twitter"> </h1>
-                <h1 class="fa-brands fa-square-youtube"> </h1>
-                <h1 class="fa-brands fa-linkedin"></h1>
-            </div>
-            <div class="f_col footer_col3">
-                <h1 class="footer_heading">
-                    Contact
-                </h1>
-                <p>
-                    kajoli pithoragard uttakhand India
-                </p>
-                <h1> +91 8433410176</h1>
-                <h1> +91 8954119002</h1>
-
-            </div>
-        </footer>
-
-        <div class="last_footer">
-            <p> Copyright ©2023 All rights reserved | This template is made with by Aman </p>
-        </div>
-    </section>
+    {{>footer}}
     <!-- ---------------------script javascript --------------- -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../static/js/script.js"></script>
     <script>
         AOS.init();
     </script>

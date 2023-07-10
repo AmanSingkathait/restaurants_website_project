@@ -80,11 +80,19 @@ setInterval(() => {
 }, 2000);
 
 // using a node moduel prectice 
-let A_array = document.querySelectorAll(".ankar");
-A_array.forEach(btn => {
-    btn.addEventListener("click", () => {
-        let sel = document.querySelector(".navbar .poweranker").classList.remove("poweranker");
-        btn.classList.add("poweranker");
 
-    })
-})
+
+
+
+// let allanker = document.querySelectorAll(".ankar");
+// allanker.forEach((ele) => {
+//     ele.onclick = (event)=>{
+//         event.preventDefault();
+
+//         allanker.forEach((element)=>{
+//             element.classList.remove("poweranker");
+//         })
+        
+//         ele.classList.add("poweranker")
+//     }
+// })

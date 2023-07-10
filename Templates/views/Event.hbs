@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manar Restautant website </title>
+    {{>headtag}}
+</head>
+
+<body>
+    <header id="home" class="home">
+        {{>navbar}}
+        <section class="Hcontainer" data-aos="fade-up"
+            style=" background-image: linear-gradient(rgba(4, 9, 30, .8), rgba(4, 9, 30, .7)), url(https://media.istockphoto.com/id/1241879686/photo/delicious-vegan-tacos-served-in-a-plate.jpg?s=612x612&w=is&k=20&c=12DQbRa_rDMuePXfx-VXIYlWRScsM-kqJxt3C9FYI1M=)">
+        </section>
+        <div class="small_container">
+            <p> ENJOY YOUR HEALTHY DELICIOUS MEAL </p>
+            <h1> HEALTHY MENU MEAL </h1>
+            <p>Another free template by Colorlib. Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <a href="/about" class="B_table">Explore more </a>
+        </div>
+        </section>
+    </header>
+    <section id="event" class="event">
+        <h1 class="uphead"> EVENTS</h1>
+        <h1 class="downhead">Enjoy <span> Our Events</span></h1>
+        <p class="h_para"> Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia, there live the blind texts.
+        </p>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="e_row">
+                        <div class="e_col">
+                            <span>$20.99</span>
+                            <h1> Birthday Party</h1>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the Semantics, a large language ocean.
+                            </p>
+                            <h2> <i class="fa-solid fa-check"></i> Away behind the word </h2>
+                            <h2> <i class="fa-solid fa-check"></i> Bookmarksgrove right at the coast </h2>
+                            <h2> <i class="fa-solid fa-check"></i> Separated they live </h2>
+                        </div>
+                        <div class="e_image">
+                            <img src="../Public/Image/party_1.jpg.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="e_row">
+                        <div class="e_image">
+                            <img src="../Public/Image/party_2.jpg.webp" alt="">
+                        </div>
+                        <div class="e_col">
+                            <span>$200.99</span>
+                            <h1> Guest Chef Nihgt Party</h1>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the Semantics, a large language ocean.
+                            </p>
+                            <h2> <i class="fa-solid fa-check"></i> Away behind the word </h2>
+                            <h2> <i class="fa-solid fa-check"></i> Bookmarksgrove right at the coast </h2>
+                            <h2> <i class="fa-solid fa-check"></i> Separated they live </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="margin-top: 2rem;"></div>
+        </div>
+    </section>
+    
+      <!-- ===========================footer of about section starting = =========== -->
+    {{>footer}}
+    <!-- ---------------------script javascript --------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
